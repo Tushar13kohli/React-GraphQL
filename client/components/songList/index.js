@@ -5,7 +5,6 @@ import {getTitle, removeSong} from './query';
 
 const SongList = ({data, mutate}) => {
   function onClick (id) {
-    console.log ('id', id);
     mutate ({
       variables: {id},
     }).then (() => data.refetch ());
