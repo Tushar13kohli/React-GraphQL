@@ -15,7 +15,7 @@ const SongList = ({data, mutate}) => {
     songs.map (song => (
       <li key={song.title}>
         {song.title}
-        <div style={{display: 'inline'}} onClick={() => onClick (song.id)}>
+        <div style={{display: 'inline', cursor:'pointer'}} onClick={() => onClick (song.id)}>
           <i className="material-icons">delete</i>
         </div>
       </li>
